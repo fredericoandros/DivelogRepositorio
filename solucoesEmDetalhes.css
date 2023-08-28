@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #005296;
+    --mediumblue: #18a8fb;
+    --lightBlue: #BFD3E4;
+    --yellow: #F7C200;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #C4C4C4;
+    --purple: #3F148D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    transition-property: all;
+    transition-duration: 0.25s;
+    scroll-behavior: smooth;
+}
+
+section:first-of-type {
+    background-color: var(--blue);
+}
+
+section:first-of-type > div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 96px 135px 244px 135px;
+}
+
+section:first-of-type > div > h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: var(--yellow);
+}
+
+section:first-of-type > div > h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+@media (max-width: 1023px) {
+    section:first-of-type > div {
+        padding: 48px 24px 244px 24px;
+    }
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0px 135px 96px 135px;
+}
+
+main > img:first-of-type {
+    margin-top: -180px;
+    margin-bottom: 92px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+main > h3 {
+    font-weight: 500;
+    font-size: 2.125rem;
+    margin-bottom: 16px;
+}
+
+main > p {
+    margin-bottom: 48px;
+}
+
+main > div {
+    text-align: center;
+}
+
+main > div > img:last-of-type {
+    margin-bottom: 48px;
+    width: 70%;
+    height: 433px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 1023px) {
+    main {
+        padding: 0px 24px 96px 24px;
+    }
+
+    main > div > img:last-of-type {
+        width: 100%;
+    }
+}

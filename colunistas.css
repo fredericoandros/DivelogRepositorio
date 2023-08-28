@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #005296;
+    --mediumblue: #18a8fb;
+    --lightBlue: #BFD3E4;
+    --yellow: #F7C200;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #C4C4C4;
+    --purple: #3F148D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    transition-property: all;
+    transition-duration: 0.25s;
+    scroll-behavior: smooth;
+}
+
+section {
+    background-color: var(--blue);
+}
+
+section > div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 96px 135px 96px 135px;
+}
+
+section > div > h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: var(--yellow);
+}
+
+section > div > h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 96px 135px 96px 135px;
+}
+
+main > h3 {
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 135px;
+}
+
+main > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 2%;
+}
+
+main > div > div {
+    width: 32%;
+}
+
+main > div > div > a {
+    display: flex;
+    gap: 0 16px;
+    margin-bottom: 66px;
+}
+
+main > div > div > a > img {
+    width: 116px;
+    height: 116px;
+    border-radius: 116px;
+}
+
+main > div > div > a > div > h4 {
+    color: var(--purple);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+main > div > div > a > div > p {
+    color: var(--black);
+}
+
+@media (max-width: 1279px) {
+    main > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main > div > div {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    section > div {
+        padding: 48px 24px 48px 24px;
+    }
+
+    main {
+        padding: 48px 24px 48px 24px;
+    }
+
+    main > h3 {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    main > div > div {
+        width: 100%;
+    }
+
+    main > div > div > a {
+        align-items: center;
+    }
+
+    main > div > div:nth-child(even) > a {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+}

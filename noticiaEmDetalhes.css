@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #005296;
+    --mediumblue: #18a8fb;
+    --lightBlue: #BFD3E4;
+    --yellow: #F7C200;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #C4C4C4;
+    --purple: #3F148D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    transition-property: all;
+    transition-duration: 0.25s;
+    scroll-behavior: smooth;
+}
+
+/* Título */
+
+section:first-of-type {
+    background-color: var(--blue);
+}
+
+section:first-of-type > div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 96px 135px 64px 135px
+}
+
+section:first-of-type > div > h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: var(--yellow);
+}
+
+section:first-of-type > div > h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 48px;
+    color: var(--white);
+}
+
+section:first-of-type > div > p {
+    color: var(--white);
+    margin-bottom: 48px;
+}
+
+section:first-of-type > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#colunista {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+    color: var(--white);
+}
+
+#colunista > img {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    object-fit: cover;
+}
+
+#colunista > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#redes {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 16px;
+}
+
+#redes > a > img {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 1023px) {
+    section:first-of-type > div {
+        padding: 48px 24px 48px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    section:first-of-type > div > div {
+        flex-direction: column;
+    }
+
+    #redes {
+        justify-content: flex-end;
+    }
+
+    #colunista {
+        margin-bottom: 16px;
+    }
+}
+
+/* Matéria */
+
+main {
+    max-width: 1440px;
+    padding: 96px 335px 16px 335px;
+    margin: auto;
+}
+
+main > p {
+    margin-bottom: 24px;
+}
+
+main > img {
+    width: 100%;
+    object-fit: cover;
+    height: 432px;
+    margin: 24px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 1279px) {
+    main {
+        padding: 96px 135px 16px 135px;
+    }
+}
+
+@media (max-width: 1023px) {
+    main {
+        padding: 96px 24px 16px 24px;
+    }
+}
+
+@media (max-width: 1023px) {
+    main {
+        padding: 48px 24px 16px 24px;
+    }
+}
+
+/* Ultimas Notícias */
+
+#ultimasNoticias {
+    max-width: 1440px;
+    margin: auto;
+    padding: 48px 135px 96px 135px;
+}
+
+#ultimasNoticias > h4 {
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+#ultimasNoticias > div {
+    display: flex;
+    gap: 0 32px;
+}
+
+#ultimasNoticias > div > div {
+    width: 33%;
+}
+
+#ultimasNoticias > div > div > img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+
+#ultimasNoticias > div > div > p:first-of-type {
+    color: var(--yellow);
+    background-color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    padding: 3px 30px;
+    width: min-content;
+}
+
+#ultimasNoticias > div > div > h5 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+#ultimasNoticias > div > div > p:last-of-type {
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+}
+
+#ultimasNoticias > div > div > a {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+@media (max-width: 1023px) {
+    #ultimasNoticias {
+        padding: 48px 24px 96px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #ultimasNoticias > div {
+        flex-direction: column;
+        gap: 32px 0;
+    }
+
+    #ultimasNoticias > div > div {
+        width: 100%;
+    }
+}
+
+main h3 {
+    margin-bottom: 32px;
+}
+
+main ul {
+    margin-bottom: 24px;
+}
+
+main ul > li {
+    list-style: inside;
+}
